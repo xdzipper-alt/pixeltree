@@ -1,4 +1,4 @@
-async function checkFileForApple() {
+async function checkFileForText() {
   try {
     const response = await fetch('pixeltree.txt');
     if (!response.ok) {
@@ -6,8 +6,8 @@ async function checkFileForApple() {
     }
     const text = await response.text();
 
-    if (text.includes('apple')) {
-      document.body.innerHTML += '<p>This is a test.</p>';
+    if (text.includes('text')) {
+      document.body.innerHTML += '<p>This is a test for PixelTree.</p>';
     }
   } catch (error) {
     console.error('Error:', error);
@@ -15,4 +15,4 @@ async function checkFileForApple() {
   }
 }
 
-checkFileForApple();
+checkFileForText();

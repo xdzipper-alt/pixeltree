@@ -6,7 +6,9 @@ async function checkFileForText() {
     }
     const text = await response.text();
 
-    const match = text.match(/text = ([\w\s]+)/);
+    // Modified regex to capture words and spaces
+    const match = text.match(/text = ([\w\s]+)/); 
+
     if (match && match[1]) {
       document.body.innerHTML += `<p>${match[1]}</p>`;
     } else {

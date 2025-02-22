@@ -6,12 +6,16 @@ async function checkFileForText() {
     }
     const text = await response.text();
 
-    if (text.includes('text')) {
-      document.body.innerHTML += '<p>This is a test for PixelTree.</p>';
+    const match = text.match(/text = ([\w\s]+)/);
+    if (match && match[1]) {
+      document.body.innerHTML += `<p>${match[1]}</p>`;
+    } else {
+      document.body.innerHTML += '<p>Text does not exist.</p>';
     }
+
   } catch (error) {
     console.error('Error:', error);
-    document.body.innerHTML += '<p>An error occurred while checking the file.</p>';
+    document.body.innerHTML += '<p>An error occurred.</p>';
   }
 }
 

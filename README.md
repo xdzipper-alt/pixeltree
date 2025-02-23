@@ -1,2 +1,2 @@
 # PixelTree
-PIxeltree is a website with the intention to make web development easier.
+Pixeltree is a coding language with the intention to make web development easier.

@@ -4,9 +4,9 @@ async function checkFileForTitle() {
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
-    const text = await response.text();
+    const text = await response.title();
 
-    const match = text.match(/text = ([\w\s]+)/); 
+    const match = title.match(/title = ([\w\s]+)/); 
 
     if (match && match[1]) {
       document.body.innerHTML += `<title>${match[1]}</title>`;

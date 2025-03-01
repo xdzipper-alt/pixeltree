@@ -1,6 +1,6 @@
 async function checkFileForText() {
   try {
-    const response = await fetch('pixeltree.txt');
+    const response = await fetch('vortex.txt');
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }

@@ -1,4 +1,4 @@
-async function checkFileForText() {
+async function checkFileForTitle() {
   try {
     const response = await fetch('vortex.txt');
     if (!response.ok) {
@@ -20,4 +20,4 @@ async function checkFileForText() {
   }
 }
 
-checkFileForText();
+checkFileForTitle();

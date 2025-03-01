@@ -1,0 +1,2 @@
+title = Vortex Website Test
+text = Lorem ipsum, dolor sit amet.

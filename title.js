@@ -1,6 +1,6 @@
 async function checkFileForTitle() {
   try {
-    const response = await fetch('vortex.txt');
+    const response = await fetch('content.pxtr');
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }

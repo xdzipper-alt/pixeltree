@@ -4,19 +4,18 @@ async function checkFileForTitle() {
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
-    const text = await response.title();
+    const text = await response.text();
 
-    const match = title.match(/title = ([\w\s]+)/); 
+    const match = text.match(/title = ([\w\s]+)/);
 
     if (match && match[1]) {
-      document.body.innerHTML += `<title>${match[1]}</title>`;
+      document.title = match[1];
     } else {
-      document.body.innerHTML += '<title>null</title>';
+      document.title = 'null';
     }
-
   } catch (error) {
     console.error('Error:', error);
-    document.body.innerHTML += '<title>An error occurred while trying to load the text. Try refreshing.</title>';
+    document.title = 'An error occurred';
   }
 }
 

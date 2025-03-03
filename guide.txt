@@ -1,5 +1,5 @@
 image = "[image url here]"
-That displays [image url here]
+That displays an image, through a url, like [image url here]
 
 underline
 That makes an underline

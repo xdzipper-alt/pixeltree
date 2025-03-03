@@ -1,4 +1,4 @@
-display = "[image url here]"
+image = "[image url here]"
 That displays [image url here]
 
 underline
@@ -9,3 +9,6 @@ Sets the title to Lorem ipsum
 
 text = "Dolor sit amet"
 Makes text that says Dolor sit amet.
+
+underline
+Makes an underline.

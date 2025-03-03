@@ -1,4 +1,4 @@
-content = "[image url here]"
+display = "[image url here]"
 That displays [image url here]
 
 underline

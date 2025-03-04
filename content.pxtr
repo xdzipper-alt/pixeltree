@@ -2,5 +2,5 @@ title = "Test website"
 image = "http://xdzipper.fr.to/logo.svg"
 underline
 text = "This is a test website for PixelTree!"
-text = "this is bold text lol" bold
+text = "this is bold text lol"
 comment = "shh. tell nobody that im here. shh."
